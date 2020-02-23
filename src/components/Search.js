@@ -10,7 +10,7 @@ export default function Search(){
         {
             id:1,
             schoolName: 'Davao Christian HIgh School',
-            section:'GRade 5 - Compassion',
+            section:'Grade 5 - Compassion',
             topic:'Favorite Food'},
         
             {id:2, schoolName:'Salugpungan Ta Ta’nu Igkanugon Learning Center',
@@ -31,9 +31,9 @@ export default function Search(){
     var resultsOut = results.map((result)=>{
         return(
                 <ListGroup.Item key={result.id}>
-                    <div className="school-name">{result.schoolName}</div>
-                    <div className="grade-section">{result.section}</div>
-                    <div>{result.topic}</div>
+                    <div class="row-sm-4" className="school-name">{result.schoolName}</div>
+                    <div class="row-sm-4" className="grade-section">{result.section}</div>
+                    <div class="row-sm-4">{result.topic}</div>
                     <Button variant="info">Join Discussion</Button>
                 </ListGroup.Item>
         )
@@ -45,6 +45,7 @@ export default function Search(){
             <Form inline>
                 <FormControl type="text" placeholder="Search" value={searchValue} 
                  onChange={handleChange} className="mr-sm-2" />
+
             </Form>
             <h2>{ifEmpty}</h2>
             <Card style={{ width: '80%', margin: 'auto 1em' }} striped>

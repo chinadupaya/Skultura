@@ -23,12 +23,18 @@
 }
 
 .nav-tabs{
-  background-color: rgb(0,0,0,0.7);
+  background-color: rgb(0,0,0,0.8);
   border-radius: 0px !important;
+
 }
 
-.nav>li>a {
-    background-color: #666 !important;
+.TeacherHome a.nav-link{
+    color: #1ce6d2;
+    border-radius: 0px !important;
+    font-family:"Open Sans Condensed";
+}
+
+.TeacherHome a.nav-link:active{
     color: #000;
     border-radius: 0px !important;
 }
